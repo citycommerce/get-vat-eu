@@ -22,6 +22,7 @@ output types.
 Exceptions
 ----------
 
+.. autoexception:: VIESServiceError
 .. autoexception:: ResponseIOError
 .. autoexception:: ResponseVatNumberNotConforming
 .. autoexception:: CannotGetTraderName
@@ -29,5 +30,3 @@ Exceptions
 .. autoexception:: VatNotValid
 .. autoexception:: AddressStringNotCorrespondingToExpectedFormat
 .. autoexception:: CountryCodeNotImplemented
-
-
