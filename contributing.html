@@ -1,0 +1,240 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contributing &#8212; get-vat-eu 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Copyright and license" href="copyright_license.html" />
+    <link rel="prev" title="Specifications" href="specifications.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="talk">
+<h2>Talk<a class="headerlink" href="#talk" title="Permalink to this headline">¶</a></h2>
+<p>Suggestions, improvements and discussion:</p>
+<ul class="simple">
+<li>TODO</li>
+</ul>
+</div>
+<div class="section" id="git-branches">
+<h2>Git branches<a class="headerlink" href="#git-branches" title="Permalink to this headline">¶</a></h2>
+<p>What follows is a table of the git branches used in md-toc’s repository.
+Please, do NOT open pull requests on the <code class="docutils literal notranslate"><span class="pre">master</span></code>, <code class="docutils literal notranslate"><span class="pre">dev</span></code> or <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branches.
+Use <code class="docutils literal notranslate"><span class="pre">bugfix-${fix_name}</span></code> or <code class="docutils literal notranslate"><span class="pre">newfeature-${new_feature_name}</span></code> instead.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="44%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Branch</th>
+<th class="head">Description</th>
+<th class="head">Update schedule</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">master</span></code></td>
+<td>the main branch</td>
+<td>every new release</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">dev</span></code></td>
+<td>recent changes are merged here before a new release</td>
+<td>at will</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></td>
+<td>contains the built documentation only</td>
+<td>every new release</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">bugfix-${fix_name}</span></code></td>
+<td>a generic bug fix</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">newfeature-${new_feature_name}</span></code></td>
+<td>a generic new feature</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>First of all install the software requirements from the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file
+in the repository’s root:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -r requirements.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="unit-tests">
+<h2>Unit tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">¶</a></h2>
+<p>If you have changed parts of the source code you MUST take care of adding
+the corresponding unit tests. Once you have done that run the following command
+in a terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python setup.py test
+</pre></div>
+</div>
+<p>or simply:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make test
+</pre></div>
+</div>
+</div>
+<div class="section" id="python-pep-compliancy">
+<h2>Python PEP compliancy<a class="headerlink" href="#python-pep-compliancy" title="Permalink to this headline">¶</a></h2>
+<p>To be able to lint and test for PEP compliancy you need to run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make pep
+</pre></div>
+</div>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>You can edit and rebuild all this documentation with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make doc
+</pre></div>
+</div>
+</div>
+<div class="section" id="todo-and-fixme">
+<h2>TODO and FIXME<a class="headerlink" href="#todo-and-fixme" title="Permalink to this headline">¶</a></h2>
+<p>Go in the repository’s root and then:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">grep</span> <span class="o">-</span><span class="n">e</span> <span class="n">TODO</span> <span class="o">-</span><span class="n">e</span> <span class="n">FIXME</span> <span class="o">-</span><span class="n">n</span> <span class="o">*/*.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="contribution-steps">
+<h2>Contribution Steps<a class="headerlink" href="#contribution-steps" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>clone the repository</li>
+<li>install the requirements</li>
+<li>write code</li>
+<li>write unit tests</li>
+<li>run tests</li>
+<li>run PEP linter and check</li>
+<li>update relevant documentation, if necessary</li>
+<li>pull request</li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">get-vat-eu</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=citycommerce&repo=get-vat-eu&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Developer interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="specifications.html">Specifications</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#talk">Talk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-branches">Git branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unit-tests">Unit tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-pep-compliancy">Python PEP compliancy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#todo-and-fixme">TODO and FIXME</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contribution-steps">Contribution Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="copyright_license.html">Copyright and license</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="specifications.html" title="previous chapter">Specifications</a></li>
+      <li>Next: <a href="copyright_license.html" title="next chapter">Copyright and license</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, CityCommerce srl.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/contributing.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/citycommerce/get-vat-eu" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
