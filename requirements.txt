@@ -4,5 +4,5 @@ yapf==0.26.0
 alabaster==0.7.12
 Sphinx==1.8
 twine==1.13
-setuptools==41.0
+setuptools==65.5.1
 
